@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjetas code artist</title>
+    <style type="text/css">
+        +{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(80deg,darkturquoise, darkslategray);
+        }
+        img{
+            width: 100%;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+            border: 6px solid grey;
+            padding: 2em;
+            justify-content: center;
+            flex-grow: 5;
+        }
+        .designer{
+            width: 300px;
+            background: rgba(245,245,245,0.8);
+            margin: 1em;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .cont_img{
+            height: 300px;
+            border-radius: 30px 30px 0 0;
+        }
+        .cont_img img{
+            border-radius: 30px 30px 0 0;
+            filter: saturateblur(100%);
+            mix-blend-mode: lighten;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            overflow: hidden;
+        }
+        header{
+            align-items: baseline;
+            display: flex;
+            justify-content: space-between;
+            color: rebeccapurple;
+            padding: 0 0 0.2em 0;
+            margin: .5em 1em;
+            border-bottom: 1px solid purple;
+        }
+        h3{
+           font-weight: 600;
+           font-style: normal;
+        }
+        h4{
+           font-weight: 500;
+           font-style: italic;
+        }
+        .text{
+            margin: 1em 1em 0.5em 1em;
+            color: darkslategray;
+            text-align: justify;
+            hyphens: auto;
+            font-size: 0.8em;
+            line-height: 1.6em;  
+            flex-grow: 1;
+        }
+        .pie{
+            border-radius: 0 0 30px 30px;
+            background-color: cadetblue;
+            color: white;
+            font-style: italic;
+            font-size: 0.6em;
+            padding: 1em 1em 0.5em 1em;
+            flex-grow: 5;
+        }
+        @media (max-width: 600px){
+            body{
+                font-size: 14px;
+            }
+            .contenedor{
+                flex-direction: column;
+            }
+            designer{
+                width: 30em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="designer">
+            <div class="cont_img">
+                <img src="img/saulbassportrait.jpeg">
+            </div>
+            <header>
+                <h3>Saul Bass</h3>
+                <h4>1920-1996</h4>
+            </header>
+            <div class="text">
+                <p>Was an American graphic designer and Oscar-winning filmmaker, best known for his design of motion-picture title sequences, film posters, and corporate logos.During his 40-year career, Bass worked for some of Hollywood's most prominent filmmakers, including Alfred Hitchcock, Otto Preminger, Billy Wilder, Stanley Kubrick and Martin Scorsese. Among his most famous title sequences are the animated paper cut-out of a heroin addict's arm for Preminger's The Man with the Golden Arm, the credits racing up and down what eventually becomes a high-angle shot of a skyscraper in Hitchcock's North by Northwest, and the disjointed text that races together and apart in Psycho.</p>
+                <p>Bass designed some of the most iconic corporate logos in North America, including the Bell System logo in 1969, as well as AT's globe logo in 1983 after the breakup of the Bell System. He also designed Continental Airlines' 1968 jet stream logo and United Airlines' 1974 tulip logo, which became some of the most recognized airline industry logos of the era. He died from non-Hodgkin's lymphoma in Los Angeles on April 25, 1996, at the age of 75.</p>
+            </div>
+            <div class="pie">
+                <p>obra importante</p>
+            </div>
+        </div>
+        <div class="designer">
+            <div class="cont_img">
+                <img src="img/david-carson.jpg" alt="David Carson">
+            </div>
+            <header>
+                <h3>David Carson</h3>
+                <h4>1955</h4>
+            </header>
+            <div class="text">
+                <p>Is an American graphic designer, art director and surfer. He is best known for his innovative magazine design, and use of experimental typography. He was the art director for the magazine Ray Gun, in which he employed much of the typographic and layout approach for which he is known. In particular, his widely imitated aesthetic defined the so-called "grunge typography" era. He attended Cocoa Beach High School, was class president for three years, and still considers Cocoa Beach, Florida to be the place he is "most from".</p>
+                <p>He attended San Diego State University, graduating with "Honors and Distinction" a Bachelor of Arts in Sociology. Carson's first contact with graphic design was in 1980 at the University of Arizona during a two-week graphics course, taught by Jackson Boelts.From 1982 to 1987, Carson worked as a teacher in Torrey Pines High School in San Diego, California. During that time, he was also a professional surfer, and reached a 9th in the WSA pro 4A division [4] Carson had his own signature model surfboard with Infinity surfboards, and his own signature model fin with rainbow fin co. He still surfs regularly at his property in the Caribbean.</p>
+            </div>
+            <div class="pie">
+                <p>obra importante</p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
